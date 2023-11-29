@@ -1,5 +1,5 @@
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://private-user-images.githubusercontent.com/99010203/286595736-eadf7d3f-8aea-4af5-8577-6ed2e3fdd532.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDEyNjE5MTQsIm5iZiI6MTcwMTI2MTYxNCwicGF0aCI6Ii85OTAxMDIwMy8yODY1OTU3MzYtZWFkZjdkM2YtOGFlYS00YWY1LTg1NzctNmVkMmUzZmRkNTMyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI5VDEyNDAxNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5OGI1MDc2ZWU3ZDg5ODhlNDgxMzJiMjBhMzM4ZTkxNDEyYzkzZjRjYTcyNjk5YmZjNDFlNWQ0YjIwYmE2MDkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.lehxlClJBsCybUMU3rmrvkWKmDQLcpNl3ZPrghLgbss" width="400" alt="Laravel Logo"></a></p>
 
 ## Laravel Movies Example
 
