@@ -9,15 +9,16 @@
         <meta property="og:image" content="{{asset('images/logo/logo.png')}}">
         <title>Movie App | Laravel</title>
 
-        <!-- Fonts -->
+        
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         
         <link rel="shortcut icon" href="{{asset('images/logo/logo.png')}}" type="image/png">
         <livewire:styles/>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-        <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
     </head>
     <body class="font-sans bg-gray-900 text-white">
 

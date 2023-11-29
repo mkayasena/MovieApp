@@ -7,3 +7,4 @@
 ## Laravel Movies Example
 
 I created a website with Laravel by pulling movie information from the API. I made a search section using the Liveware package.
+I used alpine.js as a javascript framework because it works compatible with tailwind css.

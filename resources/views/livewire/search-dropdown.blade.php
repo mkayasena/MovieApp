@@ -1,10 +1,12 @@
-<div class="relative">
+<div class="relative" x-data="{ isOpen: true }" @click.away="isOpen = false">
     <input wire:model.debounce.50ms="search" 
     wire:keydown="performSearch"
     wire:keydown.enter="showResultsOnEnter"
     type="text" 
     class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 text-sm focus:outline-none focus:shadow-outline" 
     placeholder="search"
+    @focus="isOpen=true"
+    @keydown.escape.window="isOpen = false"
     >
     <div class="absolute top-0">
         <svg class="fill-current text-gray-588 w-4 mt-2 ml-2" viewBox="-2.5 -2.5 24 24" preserveAspectRatio="xMinYMin" class="jam jam-search">
@@ -15,9 +17,8 @@
     <div wire:loading class="spinner top-0 right-0 mr-4 mt-3"></div>
 
     @if (strlen($search) >= 2)
-        <div wire:loading class="spinner top-0 right-0 mr-4 mt-3"></div>
 
-        <div class="absolute text-sm bg-gray-800 rounded w-64 mt-4">
+        <div class="absolute text-sm bg-gray-800 rounded w-64 mt-4" x-show="isOpen">
             @if ($searchResults->count() > 0)
                 <ul>
                     @foreach ($searchResults as $result)
