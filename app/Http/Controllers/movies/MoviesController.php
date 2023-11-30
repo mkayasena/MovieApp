@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Movies;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\ViewModels\MoviesViewModel;
 
 class MoviesController extends Controller
 {
@@ -19,20 +20,32 @@ class MoviesController extends Controller
         $nowPlayingMovies = Http::get($playingUrl)->json()['results'];
 
         $genreUrl = 'https://api.themoviedb.org/3/genre/movie/list?api_key=' . $apiKey;
-        $genresArray = Http::get($genreUrl)->json()['genres'];
+        $genres = Http::get($genreUrl)->json()['genres'];
 
         //normalde karışık bir array döndürüyor. bunu key value şeklinde döndürmek için mapWithKeys kullanıyoruz.
+        
+        /* 
         $genres = collect($genresArray)->mapWithKeys(function ($genre) {
             return [$genre['id'] => $genre['name']];
         });
+        */
 
         // dump($nowPlayingMovies);
 
+        /*
         return view('index', [
             'popularMovies' => $popularMovies,
             'nowPlayingMovies' => $nowPlayingMovies,
             'genres' => $genres,
         ]);
+        */
+        $viewModel = new MoviesViewModel(
+            $popularMovies,
+            $nowPlayingMovies,
+            $genres,
+        );
+
+        return view('index', $viewModel);
     }
 
     public function show($id)

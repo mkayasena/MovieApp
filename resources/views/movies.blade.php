@@ -19,7 +19,7 @@
                     <span class="mx-2">|</span>
                     <span>{{--film türü;--}}
                         @foreach ($movie['genres'] as $genre)
-                        {{ $genre['name'] }}@if (!$loop->last), @endif
+                            {{ $genre['name'] }}@if (!$loop->last), @endif
                         @endforeach
                     </span>
                 </div>
@@ -34,6 +34,9 @@
                                     <span>{{ $crew['name'] }}</span>
                                     <div class="text-sm text-gray-400">{{ $crew['job'] }}</div>
                                 </div>
+                                
+                            @else
+                                @break
                             @endif
                         @endforeach
                         
@@ -101,6 +104,8 @@
                                 <div class="text-gray-400 text-sm">{{ $cast['character'] }}</div>
                             </div>
                         </div>
+                    @else
+                        @break
                     @endif
                 @endforeach
 
@@ -129,6 +134,8 @@
                                 >
                             </a>
                         </div>
+                    @else
+                        @break
                     @endif
                 @endforeach
                 
